@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/f5d6a7a4e9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+      <section class="container">
+        <nav>
+            <img src="images/logo-transparent-png.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="header-text">
+            <p> Full-Stack Coding Student</p>
+            <h1> Hi, I'm <span>Andres</span><br>Asencios from California</h1>
+        </section>
+      </section>  
+    </section>
+    <!-- -----about---- -->
+    <section id="about">
+     <section class="container">
+       <section class="row">
+        <section class="about-col-1">
+            <img src="images/work pic 2.jpg" alt="picture of andres at trader joes">
+        </section>
+        <section class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p> I'm Andres Asencios,a dreamer with a goal to turn my dreams into reality! I seek to further my knowledge and strengths through learning new things! I have 2 cats and a bunch of houseplants! I hope to land an awesome tech job and help people code into the future!</p> <p><strong>Actively seeking job or apprenticeship.</strong></p>
+
+            <section class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </section>
+             <section class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Full-Stack</span><br>Coding Student</li>
+                    <li><span>HTML</span><br>HTML5 knowledge</li>
+                    <li><span>CSS</span><br>CSS knowledge</li>
+                </ul>
+             </section>
+             <section class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2023-Current</span><br>Full-stack Coding Student</li>
+                </ul>
+             </section>
+             <section class="tab-contents" id="education">
+                <ul>
+                    <li><span>2023</span><br>University of Berkeley Coding Bootcamp</li>
+                </ul>
+             </section>  
+        </section>
+       </section> 
+     </section>   
+    </section>
+<!---------services----------->
+<section id="services">
+    <section class="container">
+        <h1 class="sub-title">My Services</h1>
+        <section class="services-list">
+            <section>
+                <i class="fa-solid fa-hand-holding-seedling"></i>
+                <h2>Plant seller</h2>
+                <p>I collect and sell houseplants!</p>
+                <a href="#">learn more</a>
+            </section>
+            <section>
+                <i class="fa-solid fa-code-compare"></i>
+                <h2>HTML review</h2>
+                <p>I can review your HTML</p>
+                <a href="#">learn more</a>
+            </section>
+            <section>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>CSS review</h2>
+                <p>I can review your CSS</p>
+                <a href="#">learn more</a>
+            </section>
+
+        </section>   
+    </section>
+</section>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
