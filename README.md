@@ -16,4 +16,5 @@ Working links to etsy,github, linkedin.
 working display tabs in the about section 
 downloadable cv (unfinshed)
 hover elements amongst the display 
-
+Example of my page:
+![alt text](images/Animation.gif)
