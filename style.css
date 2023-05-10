@@ -286,3 +286,33 @@ nav ul li a:hover::after {
 .contact-right {
     flex-basis: 60%;   
 }
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i {
+    color: #b5da31d2;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons {
+    margin-top: 30px;
+}
+/* displayed the icons at in block and changes color */
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+/* adds hover element to icon when cursor over it */
+.social-icons a:hover {
+    color: #b5da31d2;
+    transform: translateY(-5px);
+}
+/* Moves the CV button to the left side of page */
+.btn.btn2 {
+    display: inline-block;
+    background: #b5da31d2;
+}
