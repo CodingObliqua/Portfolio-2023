@@ -1,16 +1,16 @@
-/* */
+/* This section sets default styles for all elements */
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-/* */
+/* This section sets styles for the entire body of the webpage*/
 body{
     background: #080808;
     color: #fff;
 }
-/* */
+/* This section sets styles for the header of the webpage */
 #header{
     width: 100%;
     height: 100vh;
@@ -18,35 +18,35 @@ body{
     background-size: cover;
     background-position: center;
 }
-/* */
+/* This section sets styles for the main content container */
 .container {
     padding: 10px 10%;
 }
-/* */
+/* This section sets styles for the navigation bar */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-/* */
+/* This section sets styles for the logo */
 .logo {
     width: 140px;
 }
-/* */
+/* This section sets styles for the navigation bar links */
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-/* */
+/* This section sets styles for the navigation bar link text */
 nav ul li a {
     color:#fff;
     text-decoration:none;
     font-size: 18px;
     position: relative;
 }
-/* */
+/* This section sets styles for the navigation bar link underline */
 nav ul li a::after {
     content: '';
     width: 0;
@@ -57,62 +57,63 @@ nav ul li a::after {
     bottom: -6px;
     transition: 0.7s;
 }
-/* */
+/* This section sets styles for the navigation bar link underline on hover  */
 nav ul li a:hover::after {
     width: 100%;
 }
-/* */
+/* This section sets styles for the text in the header section*/
 .header-text {
     margin-top: 15%;
     font-size: 30px;
 }
-/* */
+/* This section sets styles for the main header text */
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
-/* */
+/* This section sets styles for the colored portion of the main header text */
 .header-text h1 span {
     color:#ffd700;
 }
 /* --------about------ */
+/* This section sets styles for the about section */
 #about {
     padding: 80px 0;
     color: #ababab;
 }
-/* */
+/* This section sets styles for the about section columns */
 .row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-/* */
+/* This section sets styles for the about section image column */
 .about-col-1 {
     flex-basis: 35%;
 }
-/* */
+/* This section sets styles for the about section image */
 .about-col-1 img {
     width: 100%;
     border-radius: 15px;
 
 }
-/* */
+/* This section sets styles for the about section text column */
 .about-col-2 {
     flex-basis: 60%;
 
 }
-/* */
+/* This section sets styles for the sub-title in the about section */
 .sub-title {
    font-size: 60px;
    font-weight: 600;
    color: #fff; 
 }
-/* */
+/* This section sets styles for the tab titles in the about section */
 .tab-titles {
     display: flex;
     margin: 20px 0 40px;
 }
-/* */
+/* This section sets styles for the individual tab links in the about section */
 .tab-links {
     margin-right: 50px;
     font-size: 18px;
@@ -120,7 +121,7 @@ nav ul li a:hover::after {
     cursor: pointer;
     position: relative;
 }
-/* */
+/* This block sets the styling for the indicator line that appears below the active tab link */
 .tab-links::after {
     content: '';
     width: 0;
@@ -131,21 +132,21 @@ nav ul li a:hover::after {
     bottom: -8px;
    transition: 0.5s; 
 }
-/* */
+/* This block sets the styling for the active link's indicator line, which makes it wider than the inactive links */
 .tab-links.active-link::after {
     width: 50%;
 }
-/* */
+/* This block sets the styling for the list items within the tab contents */
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
-/* */
+/*This block sets the styling for the text within the list items in the tab contents */
 .tab-contents ul li span {
     color:#ebda7e;
     font-size: 14px;
 }
-/* hides all tab contents */
+/* This block hides all tab contents by default*/
 .tab-contents {
     display: none;
 }
@@ -316,3 +317,47 @@ nav ul li a:hover::after {
     display: inline-block;
     background: #b5da31d2;
 }
+.contact-right form {
+    width: 100%;
+}
+/*creates an input field to write */
+form input,form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;    
+}
+.copyright {
+   width: 100%;
+   text-align: center;
+   padding: 25px 0;
+   background: #262626;
+   font-weight: 300;
+   margin-top: 20px; 
+}
+.copyright i {
+    color:#b5da31d2;
+}
+/*--------------- css for small screen ------ */
+@media screen and (max-width: 768px) {
+    .box {
+      flex: 0 0 45%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .box {
+      flex: 0 0 100%;
+    }
+  }
