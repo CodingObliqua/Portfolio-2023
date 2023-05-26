@@ -350,7 +350,7 @@ form .btn2 {
     color:#b5da31d2;
 }
 /*--------------- css for small screen ------ */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .box {
       flex: 0 0 45%;
     }
