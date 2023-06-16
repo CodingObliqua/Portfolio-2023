@@ -52,8 +52,9 @@ nav ul li {
 nav ul li a {
     color:#fff;
     text-decoration:none;
-    font-size: 18px;
+    font-size: 36px;
     position: relative;
+    text-shadow: #fc0 1px 0 10px;
 }
 /* This section sets styles for the navigation bar link underline */
 nav ul li a::after {
